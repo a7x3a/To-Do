@@ -1,0 +1,104 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  letter-spacing: 1px;
+  font-family: Verdana;
+  text-transform: capitalize;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    55deg,
+    rgba(0, 196, 250, 0.067) 10%,
+    rgba(43, 255, 0, 0.594) 55%,
+    rgba(238, 255, 0, 0.594) 25%
+  );
+}
+
+.container {
+  width: 330px;
+  height: 450px;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  overflow-y: auto;
+  margin: 20px;
+}
+
+#input {
+  height: 50px;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  background: #666;
+  color: #fff;
+  padding: 0 10px;
+  margin: 5px 0;
+}
+
+#input::placeholder {
+  color: #bbb;
+}
+
+ul li {
+  background: #eee;
+  color: #333;
+  height: 40px;
+  border-radius: 10px;
+  margin: 10px 0;
+  padding: 10px;
+  position: relative;
+}
+
+ul .fa-trash,
+.fa-check {
+  position: absolute;
+  cursor: pointer;
+}
+
+ul .fa-check {
+  right: 45px;
+  color: green;
+}
+
+ul .fa-trash {
+  right: 20px;
+  color: rgb(220, 57, 57);
+}
+
+ul .checked {
+  background: lightgreen;
+  text-decoration: line-through;
+  transition: 0.2s;
+}
+
+ul {
+  list-style: none;
+}
+
+.social {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  background: #99a592;
+  border-radius: 10px;
+  color: #fff;
+  transition: 0.5s;
+}
+
+.social:hover {
+  background: lightgreen;
+}
+.social i {
+  color: #fff;
+  width: 20px;
+  height: 20px;
+}
